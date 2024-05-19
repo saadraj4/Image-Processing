@@ -4,7 +4,7 @@ from matplotlib import pyplot as plt
 from skimage import exposure
 #%%
 def apply_gaussian_filter(image):
-    ksize = (9, 9)
+    ksize = (3, 3)
     return cv2.GaussianBlur(image, ksize, 0)
 #%%
 def apply_butterworth_filter(image):
@@ -26,7 +26,7 @@ def apply_butterworth_filter(image):
     return img_back
 #%%
 def apply_laplacian_filter(image):
-    return cv2.Laplacian(image, cv2.CV_64F,ksize=7)
+    return cv2.Laplacian(image, cv2.CV_64F,ksize=3)
 #%%
 def histogram_matching(source, template):
     matched = exposure.match_histograms(source, template, multichannel=False)
