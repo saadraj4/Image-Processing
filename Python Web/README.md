@@ -1,0 +1,1 @@
+Run the app.py inside the zip. It will give you some address (in my case it is: 127.0.0.1:5000). Copy this address and paste in the web browser. you will get the interface to interact with the application
